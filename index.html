@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sample Layout: WordPress Landing Page with Lead Capture Form</title>
+<style>
+:root{--ink:#16202b;--muted:#5d6874;--brand:#1f5fa8;--accent:#16a37f;--bg:#f4f7fb;--line:#dfe6ee}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+.banner{background:#ffd900;color:#000;text-align:center;font-weight:700;padding:10px 14px;font-size:15px;position:sticky;top:0;z-index:10}
+.ph{background:#fff3b0;border:1px dashed #b38f00;padding:0 4px;border-radius:3px;color:#000;font-weight:600;font-size:.92em}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:16px 7%;border-bottom:1px solid var(--line)}
+.logo{font-size:22px;font-weight:800;color:var(--brand)}
+nav a{margin-left:20px;color:var(--ink);text-decoration:none;font-size:15px}
+nav a.cta{background:var(--brand);color:#fff;padding:8px 16px;border-radius:8px}
+.imgph{border-radius:12px;background:repeating-linear-gradient(45deg,#dfe8f2,#dfe8f2 12px,#eef3f9 12px,#eef3f9 24px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:600;padding:20px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:start;padding:64px 7%;background:var(--bg)}
+.hero h1{font-size:42px;line-height:1.15;margin:0 0 16px}
+.hero p.lead{font-size:19px;color:var(--muted);margin:0 0 20px;max-width:560px}
+.checks{list-style:none;padding:0;margin:0 0 20px}.checks li{padding-left:28px;position:relative;margin:8px 0}.checks li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+.form{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 8px 30px rgba(20,40,70,.08)}
+.form h2{font-size:22px;margin:0 0 4px}.form p{margin:0 0 16px;color:var(--muted);font-size:14px}
+.form label{display:block;font-size:13px;font-weight:600;margin:12px 0 4px}
+.form .f{border:1px solid var(--line);border-radius:8px;padding:11px 12px;color:#8a95a1;font-size:14px;background:#fafcfe}
+.form .f.tall{height:74px}
+.form .submit{margin-top:18px;background:var(--accent);color:#fff;text-align:center;font-weight:700;padding:13px;border-radius:8px}
+.form small{display:block;margin-top:10px;color:var(--muted);font-size:12px}
+section{padding:60px 7%}section.soft{background:var(--bg)}
+h2.t{font-size:30px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}.card h3{margin:4px 0 6px;font-size:19px}
+.step{font-size:13px;font-weight:800;color:var(--brand);letter-spacing:.05em}
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}.logos .imgph{height:70px;padding:8px;font-size:13px}
+.quote{font-style:italic}
+.ctaband{background:var(--brand);color:#fff;text-align:center;padding:50px 7%}.ctaband h2{margin:0 0 10px;font-size:28px}
+.ctaband a{display:inline-block;background:#fff;color:var(--brand);font-weight:700;padding:12px 26px;border-radius:8px;text-decoration:none;margin-top:12px}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+footer{padding:24px 7%;color:var(--muted);font-size:13px;border-top:1px solid var(--line);text-align:center}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.hero h1{font-size:31px}nav a:not(.cta){display:none}}
+</style>
+</head>
+<body>
+<div class="banner">Sample layout only. Not a live site. Business name, offer, wording and images are placeholders to be replaced with the client's real content and competitor references.</div>
+<header><div class="logo"><span class="ph">[Business Name / Logo]</span></div>
+<nav><a href="#how">How it works</a><a href="#services">Services</a><a href="#faq">FAQ</a><a class="cta" href="#get-started">Get a free estimate</a></nav></header>
+
+<div class="hero" id="get-started">
+<div>
+<p style="margin:0 0 8px"><span class="ph">Suggested headline, yours to change</span></p>
+<h1><span class="ph">[Main benefit]</span> for <span class="ph">[who you serve]</span>, without the hassle.</h1>
+<p class="lead"><span class="ph">[One or two sentences on what you do and why people choose you, in your words]</span></p>
+<ul class="checks">
+<li><span class="ph">[Key benefit or differentiator 1]</span></li>
+<li><span class="ph">[Key benefit or differentiator 2]</span></li>
+<li><span class="ph">[Key benefit or differentiator 3]</span></li>
+</ul>
+<div class="imgph" style="aspect-ratio:16/8">[Placeholder: hero photo or short video of your work]</div>
+</div>
+<div class="form">
+<h2>Lead capture form</h2>
+<p>Above the fold on desktop, right under the headline on phones. Fields are examples; we'd keep only what you need.</p>
+<label>Name</label><div class="f">Full name</div>
+<label>Email</label><div class="f">name@example.com</div>
+<label>Phone (optional)</label><div class="f">Best number to reach you</div>
+<label><span class="ph">[Qualifying question, e.g. service needed]</span></label><div class="f">Choose one ▾</div>
+<label>Message</label><div class="f tall">Tell us a bit about your project</div>
+<div class="submit"><span class="ph">[Button text, e.g. Get my free estimate]</span></div>
+<small>Submissions go to your inbox and, if you like, your CRM or a Google Sheet. Includes spam protection and a thank-you message or page.</small>
+</div>
+</div>
+
+<section id="how">
+<h2 class="t">How it works</h2><p class="sub">A simple three-step path so visitors know what happens after they submit.</p>
+<div class="grid">
+<div class="card"><div class="step">STEP 1</div><h3>Tell us what you need</h3><p><span class="ph">[What the visitor does: fill out the short form]</span></p></div>
+<div class="card"><div class="step">STEP 2</div><h3><span class="ph">[What you do next]</span></h3><p><span class="ph">[e.g. review the request and follow up within your stated time]</span></p></div>
+<div class="card"><div class="step">STEP 3</div><h3><span class="ph">[The outcome]</span></h3><p><span class="ph">[What the customer gets]</span></p></div>
+</div></section>
+
+<section id="services" class="soft">
+<h2 class="t">Services</h2><p class="sub">Short cards, each ending in the same call to action.</p>
+<div class="grid">
+<div class="card"><h3><span class="ph">[Service 1]</span></h3><p><span class="ph">[One-line description]</span></p></div>
+<div class="card"><h3><span class="ph">[Service 2]</span></h3><p><span class="ph">[One-line description]</span></p></div>
+<div class="card"><h3><span class="ph">[Service 3]</span></h3><p><span class="ph">[One-line description]</span></p></div>
+</div></section>
+
+<section>
+<h2 class="t">Proof</h2><p class="sub">Only real reviews, logos or results you provide. Left empty rather than invented.</p>
+<div class="grid">
+<div class="card quote"><p><span class="ph">[Real client review, with permission]</span></p><p><span class="ph">[Client name or initials]</span></p></div>
+<div class="card quote"><p><span class="ph">[Real client review, with permission]</span></p><p><span class="ph">[Client name or initials]</span></p></div>
+</div>
+<div class="logos" style="margin-top:20px"><div class="imgph">[Client or partner logo]</div><div class="imgph">[Certification badge]</div><div class="imgph">[Client or partner logo]</div><div class="imgph">[Review platform badge]</div></div>
+</section>
+
+<section id="faq" class="soft">
+<h2 class="t">FAQ</h2><p class="sub">Answers to the questions that stop people from filling out the form.</p>
+<div class="grid">
+<div class="card"><h3><span class="ph">[Question about price]</span></h3><p><span class="ph">[Your answer]</span></p></div>
+<div class="card"><h3><span class="ph">[Question about timing]</span></h3><p><span class="ph">[Your answer]</span></p></div>
+<div class="card"><h3><span class="ph">[Question about service area or fit]</span></h3><p><span class="ph">[Your answer]</span></p></div>
+</div></section>
+
+<div class="ctaband"><h2><span class="ph" style="color:#000">[Closing line that repeats the main offer]</span></h2><a href="#get-started">Back to the form</a></div>
+
+<footer>Sample layout for a WordPress landing page with lead capture. Built as a mockup for discussion; no real business is represented.</footer>
+</body>
+</html>
